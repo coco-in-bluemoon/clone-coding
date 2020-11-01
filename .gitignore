@@ -1,2 +1,5 @@
 # Visutal Studio Code
 .vscode/
+
+# OSX
+.DS_Store

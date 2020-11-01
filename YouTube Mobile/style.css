@@ -1,0 +1,221 @@
+:root {
+    --color-white: #f0f0f0;
+    --color-black: #140a00;
+    --color-blue: #045fd4;
+    --color-red: #ff0000;
+    --color-dark-grey: #909090;
+    --color-light-grey: #e0e0e0;
+
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 18px;
+
+    --padding-size: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+li {
+    list-style-type: none;
+}
+
+button, button:hover {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: var(--font-size-large);
+
+    padding: var(--padding-size);
+}
+
+header .logo i {
+    color: var(--color-red);
+}
+
+header .icon i {
+    padding: 0 5px;
+}
+
+/* Player */
+.player {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--color-black);
+}
+
+.player iframe {
+    width: 100%;
+    height: 300px;
+    max-width: 500px;
+}
+
+.information {
+    padding: var(--padding-size);
+}
+
+.metadata .hashtag {
+    display: flex;
+    color: var(--color-blue);
+    margin-bottom: 5px;
+}
+
+.metadata .hashtag .item:nth-child(2) {
+    padding: 0 15px;
+}
+
+.metadata .titleAndButton {
+    display: flex;
+}
+
+.metadata .titleAndButton .title.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.metadata .titleAndButton .buttonMore {
+    height: 100%;
+    transition: transform 300ms ease-in-out;
+}
+
+.metadata .titleAndButton .buttonMore.clicked {
+    transform: rotate(180deg);
+}
+
+.metadata .view {
+    font-size: var(--font-size-medium);
+    color: var(--color-dark-grey);
+}
+
+.action {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-size-large);
+}
+
+.action button {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-size);
+    color: var(--color-dark-grey);
+}
+
+.action button.active {
+    color: var(--color-blue);
+}
+
+.action button i {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.informatioAndNext {
+    display: flex;
+    flex-direction: column;
+}
+
+.information > .channel {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--color-light-grey);
+    border-bottom: 1px solid var(--color-light-grey);
+    padding: 5px 0;
+}
+
+.information > .channel .author {
+    display: flex;
+}
+
+.information > .channel .author img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.information > .channel .author .channelInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.information > .channel .author .channelInfo .subsriber {
+    font-size: var(--font-size-small);
+    color: var(--color-dark-grey);
+}
+
+.information > .channel .buttonSubscribe {
+    text-transform: uppercase;
+    color: var(--color-red);
+}
+
+.upNext {
+    padding: var(--padding-size);
+}
+
+.upNext .header {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-medium);
+}
+
+.upNext .nextVideo {
+    display: flex;
+}
+
+.upNext .nextVideo .thumbnail {
+    flex: 1 1 15%;
+}
+
+.upNext .nextVideo .thumbnail img {
+    width: 100%;
+}
+
+.upNext .nextVideo .videoInfo {
+    flex: 1 1 60%;
+    padding: 0 5px;
+}
+
+.upNext .nextVideo .videoInfo > .title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.upNext .nextVideo .videoInfo > .channel {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-medium);
+}
+
+.upNext .nextVideo .videoInfo > .view {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-small);
+}
+
+.upNext .nextVideo .moreButton {
+    flex: 1 1 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .informatioAndNext {
+        flex-direction: row;
+    }
+}
