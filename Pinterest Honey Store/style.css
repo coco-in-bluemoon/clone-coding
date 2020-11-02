@@ -1,0 +1,190 @@
+:root {
+    --color-white: #fefefe;
+    --color-black: #101010;
+    --color-honey: #f2bf61;
+    --color-grey: #cccccc;
+
+    --font-size-large: 2rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.8rem;
+}
+
+body {
+    margin: 0 2rem;
+    padding: 0;
+    background-color: var(--color-white);
+    font-family: 'Roboto';
+}
+
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+header h1 {
+    font-size: var(--font-size-large);
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--color-black);
+}
+
+nav.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem 1rem;
+    border-top: 0.1rem solid var(--color-grey);
+    border-bottom: 0.1rem solid var(--color-grey);
+}
+
+nav.navbar ul li {
+    padding: 1rem 1rem;
+}
+
+.main .image img {
+    width: 100%;
+}
+
+.main .welcome .title {
+    font-size: var(--font-size-large);
+    text-align: center;
+    color: var(--color-black);
+}
+
+.main .welcome .message {
+    color: var(--color-grey);
+    text-align: center;
+    padding: 0 8rem;
+    font-style: italic;
+}
+
+.information {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.information .item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.information .item img {
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.information .item h3 {
+    text-align:  center;
+    font-size: var(--font-size-medium);
+    color: var(--color-black);
+}
+
+.information .item p {
+    text-align: center;
+    color: var(--color-grey);
+    font-size: var(--font-size-small);
+    font-style: italic;
+}
+
+.information .item a {
+    text-align: center;
+    color: var(--color-honey);
+    font-size: var(--font-size-small);
+    font-style: italic;
+}
+
+.contact {
+    font-size: var(--font-size-large);
+    text-align: center;
+    margin: 2rem;
+    border-top: 0.1rem solid var(--color-grey);
+    border-bottom: 0.1rem solid var(--color-grey);
+}
+
+.contact span {
+    color: var(--color-honey);
+    font-style: italic;
+}
+
+.description {
+    display: flex;
+}
+
+.description .article {
+    flex: 1 1 60%;
+}
+
+.description .article .main{
+    font-size: var(--font-size-medium);
+    font-style: italic;
+}
+
+.description .article .text{
+    font-size: var(--font-size-small);
+    color: var(--color-grey);
+}
+
+.description .summary {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description .summary .item {
+    padding-bottom: 1rem;
+}
+
+.description .summary .item .title {
+    padding: 0 1rem 1rem 0;
+    font-size: calc(1.2 * var(--font-size-medium));
+}
+
+.description .summary .item .title i {
+    color: var(--color-honey);
+    margin-right: 1rem;
+}
+
+.description .summary .item .message {
+    font-size: var(--font-size-small);
+    color: var(--color-grey);
+}
+
+footer .iconSNS {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-large);
+}
+
+footer .iconSNS li {
+    padding: 0 0.5rem;
+}
+
+footer nav {
+    color: var(--color-grey);
+    font-size: var(--font-size-small);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    color:  var(--color-grey);
+    padding: 0 0.1rem;
+}
+
+footer p {
+    color: var(--color-grey);
+    font-size: var(--font-size-small);
+    text-align: center;
+}
